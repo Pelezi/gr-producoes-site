@@ -1,0 +1,16 @@
+[
+    {
+        "id": "01ef409f-77ca-496c-bd2f-4b838f416243",
+        "name": "Pratos Fundos",
+        "photoUrl": "https://res.cloudinary.com/ddsltmohi/image/upload/v1737642483/blob_angcm7.jpg",
+        "quantity": 2,
+        "description": ""
+    },
+    {
+        "id": "5a993725-83ba-4670-b0bc-6bfac3efbf99",
+        "name": "Jogo de panelas",
+        "photoUrl": "https://res.cloudinary.com/ddsltmohi/image/upload/v1737529172/blob_qe924t.jpg",
+        "quantity": 1,
+        "description": ""
+    }
+]
