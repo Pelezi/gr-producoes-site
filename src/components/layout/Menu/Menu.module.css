@@ -65,6 +65,7 @@
     top: 0;
     left: 10%;
     margin: 1rem;
+    z-index: 10;
 }
 
 .links {
@@ -90,6 +91,7 @@
 .logo {
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 .logo img {
@@ -119,7 +121,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 10;
     }
     .text {
         font-size: 0.75em;
@@ -161,6 +163,7 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.8);
         animation: fadeIn 0.5s forwards;
+        backdrop-filter: blur(5px); /* Add this line */
     }
 
     .overlay.hidden {

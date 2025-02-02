@@ -19,13 +19,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className={styles.container}>
             <div className={styles.gradient}></div>
             <div className={styles.main}>
+                <div className={styles.menu}>
+                    <Menu />
+                </div>
                 <div className={styles.content}>
                     {children}
                     <Analytics/>
                     <SpeedInsights/>
-                </div>
-                <div className={styles.menu}>
-                    <Menu />
                 </div>
             </div>
         </div>

@@ -1,3 +1,6 @@
+@import url(https://db.onlinewebfonts.com/c/40508c5e045b37ccaca5ccfec24d1479?family=DIN+2014+Light);
+@import url(https://db.onlinewebfonts.com/c/e880dd7c6ab5731cbb5db5df70330509?family=DIN+2014+Bold);
+
 .section {
     display: flex;
     flex-direction: row;
@@ -15,8 +18,16 @@
 
 .title {
     font-size: 2rem;
-    margin: 0;
+    margin: calc(40vh - 1em) 0 calc(45vh - 1em) 0;
     text-align: center;
+    color: white;
+    font-family: "DIN 2014 Light";
+    font-weight: normal;
+}
+
+.title strong {
+    font-family: "DIN 2014 Bold";
+    font-weight: bold;
 }
 
 .bioButton {
@@ -120,6 +131,116 @@
     background-color: #f0f0f0;
 }
 
+.backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.backgroundVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.gradientBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+
+.highlights {
+    color: white;
+    margin-bottom: 0;
+    justify-self: center;
+}
+
+@-webkit-keyframes shake-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    80% {
+        -webkit-transform: translateY(3.2px);
+        transform: translateY(3.2px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-3.2px);
+        transform: translateY(-3.2px);
+    }
+}
+
+@keyframes shake-vertical {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    80% {
+        -webkit-transform: translateY(3.2px);
+        transform: translateY(3.2px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-3.2px);
+        transform: translateY(-3.2px);
+    }
+}
+
+.downArrow {
+    color: white;
+    margin: 0 0 10vh 0;
+    -webkit-animation: shake-vertical 8s linear both infinite;
+    animation: shake-vertical 8s linear both infinite;
+    justify-self: center;
+    position: relative;
+    z-index: -1; 
+}
+
 @media screen and (max-width: 768px) {
     .dialogueBalloon {
         left: 0;
@@ -128,4 +249,7 @@
         margin: 1rem;
     }
 
+    .title {
+        margin: calc(40vh - 4em) 0 calc(50vh - 4em) 0;
+    }
 }
