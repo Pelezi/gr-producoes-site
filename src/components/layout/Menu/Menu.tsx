@@ -8,7 +8,7 @@ import { FaGift, FaBars } from "react-icons/fa6";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import Button from "../../common/Button";
 
-import GRProducoesWhite from "../../../Assets/img/GRProducoesWhite.png"
+import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
 
 const Menu: React.FC = ({ }) => {
     const [menuOpen, setMenuOpen] = useState(false);
