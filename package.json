@@ -1,5 +1,5 @@
 {
-  "name": "soft-estudio-site",
+  "name": "gr-producoes-site",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",

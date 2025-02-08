@@ -6,9 +6,9 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 200ms ease-in;
-    margin: 1rem;
+    margin: 0;
     width: 100%;
-    max-width: 300px;
+    max-width: calc(100% / 3);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -58,6 +58,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .card {
+        max-width: 100%;
+    }
 
     .cardTitle {
         font-size: 1rem;

@@ -9,6 +9,8 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import Button from "../../common/Button";
 
 import SoftEstudio from "../../../Assets/img/SoftEstudio.png"
+import GRProducoes from "../../../Assets/img/GRProducoes.png"
+import GRProducoesWhite from "../../../Assets/img/GRProducoes-white.png"
 
 const Menu: React.FC = ({ }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -35,21 +37,22 @@ const Menu: React.FC = ({ }) => {
                 </Button>
             </div>
             <div className={styles.logo}>
-                <img src={SoftEstudio} alt="" />
+                <img src={GRProducoesWhite} alt="" />
             </div>
             {overlayPresent && <div className={`${styles.overlay} ${!overlayVisible ? styles.hidden : ''}`} onClick={toggleMenu}></div>}
             <div className={`${styles.links} ${menuOpen ? styles.menuOpen : styles.menuClosed}`}>
-                {["Home", "Portfólio", "Sobre nós", "Contato"].map((text, index) => (
+                {["Home", "Live Shopping", "Fashion Film", "Eventos", "Contato"].map((text, index) => (
                     <NavLink
                         key={text}
                         className={({ isActive }) => (
                             isActive ? `${styles.link} ${styles.activeLink}` : styles.link
                         )}
                         to={
-                            text === "Home" ? "/" 
-                            : text === "Portfólio" ? "/portfolio"
-                            : text === "Sobre nós" ? "/about"
-                            : text === "Contato" ? "/contact"
+                            text == "Home" ? "/" 
+                            : text == "Live Shopping" ? "/liveShopping"
+                            : text == "Fashion Film" ? "/fashionFilm"
+                            : text == "Eventos" ? "/eventos"
+                            : text == "Contato" ? "/contato"
                             : "/"
                         }
                         onClick={() => toggleMenu()}
