@@ -17,15 +17,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.gradient}></div>
             <div className={styles.main}>
-                <div className={styles.menu}>
-                    <Menu />
-                </div>
                 <div className={styles.content}>
                     {children}
-                    <Analytics/>
-                    <SpeedInsights/>
+                    <Analytics />
+                    <SpeedInsights />
+                </div>
+                <div className={styles.menu}>
+                    <div className={styles.gradient}></div>
+                    <Menu />
                 </div>
             </div>
         </div>
