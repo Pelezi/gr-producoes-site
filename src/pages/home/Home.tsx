@@ -7,7 +7,7 @@ import InfoBox from "../../components/common/InfoBox";
 
 import giftsData from "../../db/gift.json";
 
-import backgroundVideo from "../../Assets/video/DI 02.mp4"
+import backgroundVideo from "../../Assets/video/VIDEO ABERTURA SITE .mp4"
 
 const Home = () => {
     const [gifts] = useState<any[]>(giftsData);
