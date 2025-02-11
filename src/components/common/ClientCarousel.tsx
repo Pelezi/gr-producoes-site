@@ -19,7 +19,7 @@ import client15 from "../../Assets/img/client15.png";
 
 const ClientCarousel = () => {
   const clients = [client1, client2, client3, client4, client5, client6, client7, client8, client9, client10, client11, client12, client13, client14, client15];
-  
+
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -64,25 +64,28 @@ const ClientCarousel = () => {
     if (carousel.scrollLeft === 0) {
       carousel.scrollLeft = carousel.scrollLeft + (carousel.scrollWidth / 4);
     } else if (carousel.scrollLeft >= maxScrollLeft / 2) {
-    carousel.scrollLeft = carousel.scrollLeft - (carousel.scrollWidth / 4);
+      carousel.scrollLeft = carousel.scrollLeft - (carousel.scrollWidth / 4);
     }
   };
 
   return (
-    <div
-      className={styles.carouselContainer}
-      ref={carouselRef}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUpOrLeave}
-      onMouseLeave={handleMouseUpOrLeave}
-      onScroll={handleScroll}
-    >
-      <div className={styles.carousel}>
-        {/* Duplicate content for seamless infinite scrolling */}
-        {clients.concat(clients).concat(clients).concat(clients).map((client, index) => (
-          <img key={index} src={client} alt={`Client ${index + 1}`} />
-        ))}
+    <div className={styles.background}>
+      <h2 className={styles.text}>Nossos Clientes</h2>
+      <div
+        className={styles.carouselContainer}
+        ref={carouselRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUpOrLeave}
+        onMouseLeave={handleMouseUpOrLeave}
+        onScroll={handleScroll}
+      >
+        <div className={styles.carousel}>
+          {/* Duplicate content for seamless infinite scrolling */}
+          {clients.concat(clients).concat(clients).concat(clients).map((client, index) => (
+            <img key={index} src={client} alt={`Client ${index + 1}`} />
+          ))}
+        </div>
       </div>
     </div>
   );

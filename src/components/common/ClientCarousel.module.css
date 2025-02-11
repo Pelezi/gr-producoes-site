@@ -1,3 +1,16 @@
+.background {
+    background-color: white;
+    padding: 1vh 0 10vh 0;
+}
+
+.text {
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'DIN 2014 bold';
+    font-size: 2em;
+}
+
 .carouselContainer {
     display: flex;
     justify-content: flex-start;
@@ -18,8 +31,7 @@
 
 .carousel {
     display: flex;
-    animation: scroll 5s ease-in-out infinite;
-    animation-delay: 3s;
+    animation: scroll 50s linear infinite;
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -36,10 +48,7 @@
     0% {
         transform: translateX(0);
     }
-    85% {
-        transform: translateX(0);
-    }
     100% {
-        transform: translateX(-100px);
+        transform: translateX(-25%);
     }
 }

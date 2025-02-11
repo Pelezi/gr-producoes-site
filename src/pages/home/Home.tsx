@@ -10,7 +10,7 @@ import giftsData from "../../db/gift.json";
 import backgroundVideo from "../../Assets/video/VIDEO ABERTURA SITE .mp4"
 import Gabriel from "../../Assets/img/Gabriel.jpg"
 import Thiago from "../../Assets/img/Thiago.jpg"
-import Lucas from "../../Assets/img/Lucas.jpeg"
+import Lucas from "../../Assets/img/Lucas.jpg"
 import ClientCarousel from "../../components/common/ClientCarousel";
 
 const Home = () => {
@@ -66,7 +66,7 @@ const Home = () => {
                     <div className={styles.card}>
                         <h2>Lucas</h2>
                         <img src={Lucas} alt="Gabriel Rodrigues" className={styles.photo} />
-                        <p className={styles.role}>Não sei quem é Lucas | Peguei a foto de um Lucas aleatório na internet</p>
+                        <p className={styles.role}>Técnico | auxiliar de gravação e iluminação</p>
                     </div>
                 </div>
                 {/* Client logos carousel */}
