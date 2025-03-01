@@ -297,7 +297,7 @@
 .videoGallery {
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     color: white;
     justify-content: space-between;
