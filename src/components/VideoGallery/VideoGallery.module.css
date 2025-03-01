@@ -1,0 +1,30 @@
+.videoLandscape iframe {
+    width: 100%;
+    height: 70%;
+}
+
+.videoPortrait {
+    grid-row: span 2;
+    justify-items: center;
+}
+
+.videoLandscape {
+    width: 100%;
+    height: 50vh;
+}
+
+.videoPortrait iframe {
+    height: 35vw;
+    width: 20vw;
+}
+
+.title {
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .videoLandscape {
+        height: 40vh;
+    }
+}

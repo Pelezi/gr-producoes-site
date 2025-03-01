@@ -48,7 +48,7 @@ const Menu: React.FC = ({ }) => {
                         to={
                             text == "Home" ? "/" 
                             : text == "Live Shopping" ? "/liveShopping"
-                            : text == "Fashion Film" ? "/fashionFilm"
+                            // : text == "Fashion Film" ? "/fashionFilm"
                             : text == "Eventos" ? "/eventos"
                             : text == "Contato" ? "/contato"
                             : "/"
