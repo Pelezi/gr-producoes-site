@@ -3,18 +3,26 @@ import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 
 import Title from "../../components/common/Title";
-import InfoBox from "../../components/common/InfoBox";
 
-import giftsData from "../../db/gift.json";
 
-import backgroundVideo from "../../Assets/video/Video Abertura Site.mp4"
+import backgroundVideoDesktop from "../../Assets/video/Video Abertura Site.mp4"
+import backgroundVideoMobile from "../../Assets/video/Video Abertura Site_phone.mp4"
+
 import Gabriel from "../../Assets/img/Gabriel.jpg"
 import Thiago from "../../Assets/img/Thiago.jpg"
 import Lucas from "../../Assets/img/Lucas.jpg"
 import ClientCarousel from "../../components/common/ClientCarousel";
 
 const Home = () => {
-    const [gifts] = useState<any[]>(giftsData);
+    const [backgroundVideo, setBackgroundVideo] = useState<string>(backgroundVideoDesktop);
+
+    useEffect(() => {
+        if (window.innerWidth < 768) {
+            setBackgroundVideo(backgroundVideoMobile);
+        } else {
+            setBackgroundVideo(backgroundVideoDesktop);
+        }
+    }, []);
 
     return (
         <div>
@@ -28,16 +36,6 @@ const Home = () => {
                 <Title className={styles.title}>
                     Transformando <strong>momentos</strong> em <strong>histórias visuais únicas</strong>
                 </Title>
-                {/* <p className={styles.highlights}>Trabalhos em destaque</p>
-                <p className={styles.downArrow}>▼</p>
-                <div className={styles.section}>
-                    {gifts.map((gift) => (
-                        <InfoBox
-                            key={gift.id}
-                            gift={gift}
-                        />
-                    ))}
-                </div> */}
                 <div className={styles.section}>
                     <p className={styles.text}>Sou Gabriel Rodrigues, filmmaker com mais de cinco anos de experiência no audiovisual e especialista em moda e eventos. Minha jornada profissional é movida pela paixão em transformar histórias em imagens poderosas, capturando a essência de cada projeto com autenticidade e sofisticação.
                         <br />

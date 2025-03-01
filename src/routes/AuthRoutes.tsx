@@ -16,6 +16,7 @@ const AuthRoutes: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/eventos" element={<Eventos />} />
                 <Route path="/fashionFilm" element={<FashionFilm />} />
+                <Route path="*" element={<Navigate to="/" />} />
 
             </Routes>
         </Layout>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import styles from "./Menu.module.css";
 
@@ -14,6 +14,8 @@ const Menu: React.FC = ({ }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [overlayVisible, setOverlayVisible] = useState(false);
     const [overlayPresent, setOverlayPresent] = useState(false);
+
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         if (menuOpen) {
@@ -47,7 +49,7 @@ const Menu: React.FC = ({ }) => {
                     <FaBars className={styles.icon} />
                 </Button>
             </div>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={() => navigate("/")}>
                 <img src={GRProducoesWhite} alt="" />
             </div>
             {overlayPresent && <div className={`${styles.overlay} ${!overlayVisible ? styles.hidden : ''}`} onClick={toggleMenu}></div>}
