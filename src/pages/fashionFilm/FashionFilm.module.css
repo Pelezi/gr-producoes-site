@@ -171,7 +171,8 @@
 .highlights {
     color: white;
     margin-bottom: 0;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 @-webkit-keyframes shake-vertical {
@@ -247,9 +248,10 @@
     margin: 0 0 10vh 0;
     -webkit-animation: shake-vertical 8s linear both infinite;
     animation: shake-vertical 8s linear both infinite;
-    justify-self: center;
     position: relative;
     z-index: -1;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
