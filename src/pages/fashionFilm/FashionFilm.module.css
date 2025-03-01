@@ -155,7 +155,7 @@
 
     @media (max-aspect-ratio: 16/9) {
         transform: translate(-50%, -60%);
-        width: 105vh;
+        width: 60vh;
     }
 }
 
