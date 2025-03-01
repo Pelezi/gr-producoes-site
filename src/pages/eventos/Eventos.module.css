@@ -24,6 +24,8 @@
     color: white;
     font-family: "DIN 2014 Light";
     font-weight: normal;
+    display: flex;
+    justify-content: center;
 }
 
 .title strong {

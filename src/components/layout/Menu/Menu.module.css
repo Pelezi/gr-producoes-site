@@ -93,6 +93,8 @@
     top: 2vh;
     z-index: 10;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .logo img {
