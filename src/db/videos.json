@@ -33,5 +33,82 @@
         "title": "Anavitória",
         "orientation": "landscape",
         "page": "eventos"
+    },
+    {
+        "id": 6,
+        "url": "https://drive.google.com/file/d/1-ly79c7zK4_YBGmrWt7RTr6mzgnAJDdE/preview",
+        "title": "Campanha Baylife",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 7,
+        "url": "https://drive.google.com/file/d/1EbOkMjLThBRGQP8LQ2iucMjQ19rjOTT3/preview",
+        "title": "Campanha Rota D'água",
+        "orientation": "landscape",
+        "page": "fashion"
+    },
+    {
+        "id": 8,
+        "url": "https://drive.google.com/file/d/1Dia4146lbPeH4bG_DRQI_TRIYKcTms-4/preview",
+        "title": "Campanha Luvit",
+        "orientation": "landscape",
+        "page": "fashion"
+    },
+    {
+        "id": 9,
+        "url": "https://drive.google.com/file/d/1aBayIOU-aXruFzfe9mqNMY5ODhfDSckw/preview",
+        "title": "Campanha Real.com",
+        "orientation": "landscape",
+        "page": "fashion"
+    },
+    {
+        "id": 10,
+        "url": "https://drive.google.com/file/d/1PMKcf9_y3BBJtLWgfPdtnRidy5ktf_1R/preview",
+        "title": "Campanha Badocky",
+        "orientation": "landscape",
+        "page": "fashion"
+    },
+    {
+        "id": 11,
+        "url": "https://drive.google.com/file/d/1iUfhQq910qJzsDG4ixvH57HMA7s0VhTJ/preview",
+        "title": "LookBook Viotto",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 12,
+        "url": "https://drive.google.com/file/d/1xdCGYwVTAlOSeb0M14wETKUPC5dHwryg/preview",
+        "title": "Shorts Viotto",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 13,
+        "url": "https://drive.google.com/file/d/1MjTKIsPsoQVvNcnGQ3PvJ-atIEQoEsbr/preview",
+        "title": "VIDEO 10",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 14,
+        "url": "https://drive.google.com/file/d/1IW1Wvc9eBjndktyhRQSWSmfveRmkDeK4/preview",
+        "title": "VIDEO 11",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 15,
+        "url": "https://drive.google.com/file/d/1bR6T-aDD1YQGpZMMEn7TUR05pcPVA2Nq/preview",
+        "title": "Camisas Viotto",
+        "orientation": "portrait",
+        "page": "fashion"
+    },
+    {
+        "id": 16,
+        "url": "https://drive.google.com/file/d/1qblJzZ40jxkAhniyTGn6KTgQSgiKT_Oj/preview",
+        "title": "Baylife",
+        "orientation": "portrait",
+        "page": "fashion"
     }
 ]

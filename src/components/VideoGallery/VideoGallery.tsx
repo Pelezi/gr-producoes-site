@@ -11,7 +11,7 @@ const InfoBox: React.FC<VideoGalleryProps> = ({ video }) => {
 
     return (
         <div className={video.orientation === "portrait" ? styles.videoPortrait : styles.videoLandscape}>
-            <iframe src={video.url} allow="autoplay"></iframe>
+            <iframe src={video.url} allow="autoplay;"></iframe>
             <p className={styles.title}>{video.title}</p>
         </div>
     );

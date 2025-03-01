@@ -27,6 +27,19 @@ const Menu: React.FC = ({ }) => {
         }
     };
 
+    const toggleMenuLink = () => {
+        if (menuOpen) {
+            setMenuOpen(false);
+            setTimeout(() => setOverlayVisible(false), 300);
+            setTimeout(() => setOverlayPresent(false), 1000); 
+        } else {
+            setOverlayPresent(true);
+            setMenuOpen(true);
+            setOverlayVisible(true);
+        }
+        window.scrollTo(0, 0);
+    };
+
     return (
         <nav className={`${styles.navigation}`}>
             <div className={styles.hamburguerMenu}>
@@ -39,7 +52,7 @@ const Menu: React.FC = ({ }) => {
             </div>
             {overlayPresent && <div className={`${styles.overlay} ${!overlayVisible ? styles.hidden : ''}`} onClick={toggleMenu}></div>}
             <div className={`${styles.links} ${menuOpen ? styles.menuOpen : styles.menuClosed}`}>
-                {["Home", "Live Shopping", "Fashion Film", "Eventos", "Contato"].map((text, index) => (
+                {["Home", "Fashion Film", "Eventos", "Contato"].map((text, index) => (
                     <NavLink
                         key={text}
                         className={({ isActive }) => (
@@ -47,13 +60,13 @@ const Menu: React.FC = ({ }) => {
                         )}
                         to={
                             text == "Home" ? "/" 
-                            : text == "Live Shopping" ? "/liveShopping"
-                            // : text == "Fashion Film" ? "/fashionFilm"
+                            // : text == "Live Shopping" ? "/liveShopping"
+                            : text == "Fashion Film" ? "/fashionFilm"
                             : text == "Eventos" ? "/eventos"
                             : text == "Contato" ? "/contato"
                             : "/"
                         }
-                        onClick={() => toggleMenu()}
+                        onClick={() => toggleMenuLink()}
                         style={{ transitionDelay: `${index * 0.1}s` }}
                     >
                         {text}

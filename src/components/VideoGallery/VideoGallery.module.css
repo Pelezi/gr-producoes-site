@@ -6,6 +6,8 @@
 .videoPortrait {
     grid-row: span 2;
     justify-items: center;
+    width: 100%;
+    height: 90vh;
 }
 
 .videoLandscape {
@@ -14,8 +16,8 @@
 }
 
 .videoPortrait iframe {
-    height: 35vw;
-    width: 20vw;
+    height: 80%;
+    width: 100%
 }
 
 .title {
@@ -26,5 +28,9 @@
 @media screen and (max-width: 768px) {
     .videoLandscape {
         height: 40vh;
+    }
+
+    .videoPortrait {
+        height: 90vh;
     }
 }
