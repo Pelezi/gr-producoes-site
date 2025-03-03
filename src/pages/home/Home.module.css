@@ -287,6 +287,35 @@
     width: 100%;
 }
 
+.whatsappButton {
+    width: 90px;
+}
+
+.contact {
+    margin: 10vh 0 20vh 0;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contactSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact p {
+    margin: 0 2rem;
+    color: white;
+    font-weight: bolder;
+    font-family: 'DIN 2014 Bold';
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 768px) {
     .dialogueBalloon {
         left: 0;
@@ -326,4 +355,28 @@
     .card:nth-child(3) {
         order: 3;
     }
+
+    .text {
+        padding: 0 10vw;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .contactSection {
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+    .contactInfo {
+        width: 80vw;
+        margin: 1rem 0;
+        padding: 0 10vw;
+        justify-content: space-between;
+    }
+
+    .container p {
+        margin: 0;
+    }
+
 }

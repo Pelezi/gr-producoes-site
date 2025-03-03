@@ -1,28 +1,31 @@
+.videoLandscape {
+    width: 100%;
+    --iframe-width: 0px; 
+    height: calc((var(--iframe-width) * 9) / 16);
+}
+
 .videoLandscape iframe {
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 .videoPortrait {
     grid-row: span 2;
     justify-items: center;
     width: 100%;
-    height: 90vh;
-}
-
-.videoLandscape {
-    width: 100%;
-    height: 50vh;
+    --iframe-width: 0px; 
+    height: calc(((var(--iframe-width) * 16) / 9) + 6rem);
 }
 
 .videoPortrait iframe {
-    height: 80%;
-    width: 100%
+    width: 100%;
+    height: calc((var(--iframe-width) * 16) / 9);
 }
 
 .title {
     font-size: 1.5rem;
     justify-self: center;
+    margin: 0.5em 0;
 }
 
 @media screen and (max-width: 768px) {

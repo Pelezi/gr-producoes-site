@@ -11,7 +11,8 @@ import backgroundVideoMobile from "../../Assets/video/Video Abertura Site_phone.
 import Gabriel from "../../Assets/img/Gabriel.jpg"
 import Thiago from "../../Assets/img/Thiago.jpg"
 import Lucas from "../../Assets/img/Lucas.jpg"
-import ClientCarousel from "../../components/common/ClientCarousel";
+import ClientCarousel from "../../components/ClientCarousel/ClientCarousel";
+import WhatsappContact from "../../components/WhatsappContact/WhatsappContact";
 
 const Home = () => {
     const [backgroundVideo, setBackgroundVideo] = useState<string>(backgroundVideoDesktop);
@@ -69,6 +70,7 @@ const Home = () => {
                 </div>
                 {/* Client logos carousel */}
                 <ClientCarousel />
+                <WhatsappContact message="Olá, eu vim pelo site e gostaria de conhecer melhor o seu trabalho" />
             </main>
         </div>
     )

@@ -1,7 +1,7 @@
 import api from './api';
 
 export interface Video {
-    id: string;
+    id: number;
     url: string;
     title: string;
     orientation: string;
