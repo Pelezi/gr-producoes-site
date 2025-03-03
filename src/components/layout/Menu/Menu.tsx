@@ -42,6 +42,16 @@ const Menu: React.FC = ({ }) => {
         window.scrollTo(0, 0);
     };
 
+    const handleLogoClick = () => {
+        navigate("/");
+        if (menuOpen) {
+            setMenuOpen(false);
+            setTimeout(() => setOverlayVisible(false), 300);
+            setTimeout(() => setOverlayPresent(false), 1000); 
+        }
+        window.scrollTo(0, 0);
+    }
+
     return (
         <nav className={`${styles.navigation}`}>
             <div className={styles.hamburguerMenu}>
@@ -49,7 +59,7 @@ const Menu: React.FC = ({ }) => {
                     <FaBars className={styles.icon} />
                 </Button>
             </div>
-            <div className={styles.logo} onClick={() => navigate("/")}>
+            <div className={styles.logo} onClick={handleLogoClick}>
                 <img src={GRProducoesWhite} alt="" />
             </div>
             {overlayPresent && <div className={`${styles.overlay} ${!overlayVisible ? styles.hidden : ''}`} onClick={toggleMenu}></div>}
