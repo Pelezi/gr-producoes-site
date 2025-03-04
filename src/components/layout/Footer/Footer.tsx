@@ -12,7 +12,11 @@ import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
 
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
-const Menu: React.FC = ({ }) => {
+const Footer: React.FC = ({ }) => {
+    const getCurrentYear = () => new Date().getFullYear();
+
+    const navigate = useNavigate();
+
     return (
         <footer className={styles.footer}>
             <div className={styles.topSection}>
@@ -21,31 +25,31 @@ const Menu: React.FC = ({ }) => {
                     <span className={styles.logoText}>Gr Produções</span>
                 </a>
                 <div className={styles.column}>
-                    <h2 className={styles.columnTitle}>ABOUT</h2>
+                    <h2 className={styles.columnTitle}>Tipos de eventos</h2>
                     <ul className={styles.linkList}>
-                        <li><a href="https://flowbite.com" className={styles.link}>Flowbite</a></li>
-                        <li><a href="https://tailwindcss.com" className={styles.link}>Tailwind CSS</a></li>
+                        <li><a onClick={() => navigate('/fashionfilm')} className={styles.link}>Fashion Film</a></li>
+                        <li><a onClick={() => navigate('/eventos')} className={styles.link}>Eventos</a></li>
                     </ul>
                 </div>
-                <div className={styles.column}>
+                {/* <div className={styles.column}>
                     <h2 className={styles.columnTitle}>FOLLOW US</h2>
                     <ul className={styles.linkList}>
                         <li><a href="https://github.com" className={styles.link}>GitHub</a></li>
                         <li><a href="https://discord.com" className={styles.link}>Discord</a></li>
                     </ul>
-                </div>
+                </div> */}
                 <div className={styles.column}>
-                    <h2 className={styles.columnTitle}>LEGAL</h2>
+                    <h2 className={styles.columnTitle}>Fale comigo</h2>
                     <ul className={styles.linkList}>
-                        <li><a href="#privacy" className={styles.link}>Privacy Policy</a></li>
-                        <li><a href="#terms" className={styles.link}>Terms &amp; Conditions</a></li>
+                        <li><a href="mailto:grproducoes@gmail.com" className={styles.link}>grproducoes@gmail.com</a></li>
+                        <li><a href="https://wa.me/558181880305" className={styles.link}>+55 81 8188-0305</a></li>
                     </ul>
                 </div>
             </div>
             <hr className={styles.divider} />
             <div className={styles.bottomSection}>
                 <span className={styles.copyright}>
-                    © 2025 <strong>Gr Produções</strong>
+                    © {getCurrentYear()} <strong>Gr Produções</strong>
                 </span>
                 <span>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span>
                 <div className={styles.socialIcons}>
@@ -83,4 +87,4 @@ const Menu: React.FC = ({ }) => {
     );
 };
 
-export default Menu;
+export default Footer;
