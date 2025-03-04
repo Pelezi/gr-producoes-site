@@ -1,6 +1,7 @@
 import React from "react";
 
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 import styles from "./Layout.module.css";
 import { useNavigate } from "react-router-dom";
@@ -26,6 +27,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className={styles.menu}>
                     <div className={styles.gradient}></div>
                     <Menu />
+                </div>
+                <div className={styles.footer}>
+                    <Footer />
                 </div>
             </div>
         </div>

@@ -22,16 +22,12 @@
 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
+.main {
+    height: 100%;
 }
 
-.main {
-    display: flex;
-    flex: 1;
-    height: 100%;
+.footer {
+    color: white;
 }
 
 .gradient {
