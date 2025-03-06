@@ -11,14 +11,9 @@ import client7 from "../../Assets/img/client7.png";
 import client8 from "../../Assets/img/client8.png";
 import client9 from "../../Assets/img/client9.png";
 import client10 from "../../Assets/img/client10.png";
-import client11 from "../../Assets/img/client11.png";
-import client12 from "../../Assets/img/client12.png";
-import client13 from "../../Assets/img/client13.png";
-import client14 from "../../Assets/img/client14.png";
-import client15 from "../../Assets/img/client15.png";
 
 const ClientCarousel = () => {
-  const clients = [client1, client2, client3, client4, client5, client6, client7, client8, client9, client10, client11, client12, client13, client14, client15];
+  const clients = [client1, client2, client3, client4, client5, client6, client7, client8, client9, client10];
 
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);

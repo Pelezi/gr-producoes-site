@@ -1,5 +1,5 @@
 .footer {
-    background-color: #0a0a0a;
+    background-color: #000000;
     color: #ffffff;
     padding: 1rem;
     font-family: sans-serif;
@@ -29,6 +29,7 @@
     width: 50px;
     height: 50px;
     margin-right: 20px;
+    object-fit: contain;
 }
 
 .logoText {

@@ -1,11 +1,11 @@
 .background {
-    background-color: white;
+    background-color: black;
     padding: 1vh 0 10vh 0;
     margin: 10vh 0;
 }
 
 .text {
-    color: black;
+    color: white;
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'DIN 2014 bold';
@@ -38,11 +38,13 @@
 }
 
 .carousel img {
-    max-width: 100px;
+    max-height: 100px;
+    max-width: 200px;
     margin: 0 1rem;
     transition: transform 0.3s;
     user-select: none;
     -webkit-user-drag: none;
+    object-fit: contain;
 }
 
 @keyframes scroll {
