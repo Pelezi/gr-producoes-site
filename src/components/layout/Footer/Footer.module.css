@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+.author a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .topSection {
     display: flex;
     flex-wrap: wrap;

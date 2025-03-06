@@ -1,0 +1,89 @@
+@import url(https://db.onlinewebfonts.com/c/40508c5e045b37ccaca5ccfec24d1479?family=DIN+2014+Light);
+@import url(https://db.onlinewebfonts.com/c/e880dd7c6ab5731cbb5db5df70330509?family=DIN+2014+Bold);
+
+.container {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .container p {
+        margin: 0;
+    }
+}
+
+.contactSection {
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    gap: 5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 50%;
+    background-color: #BCB4B4;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    width: 100%;
+    max-width: 500px;
+}
+
+.right {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .wrapper::after {
+        display: none;
+    }
+    .left,
+    .right {
+        max-width: 100%;
+    }
+    .right {
+        padding: 4rem 2rem 2rem 2rem;
+    }
+}

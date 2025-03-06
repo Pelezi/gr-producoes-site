@@ -4,10 +4,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 import styles from "./Footer.module.css";
 
-import { FaGift, FaBars } from "react-icons/fa6";
-import { MdOutlineShoppingCart } from "react-icons/md";
-import Button from "../../common/Button";
-
 import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
 
 import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
@@ -51,7 +47,7 @@ const Footer: React.FC = ({ }) => {
                 <span className={styles.copyright}>
                     © {getCurrentYear()} <strong>Gr Produções</strong>
                 </span>
-                <span>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span>
+                <span className={styles.author}>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span>
                 <div className={styles.socialIcons}>
                     <a
                         href="https://facebook.com"
