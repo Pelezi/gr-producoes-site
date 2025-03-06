@@ -17,8 +17,6 @@ const formatPhoneNumber = (number: string) => {
 };
 
 const handleClick = (text: string, type: string) => {
-  console.log("clicked");
-  console.log(type)
   if (type == "phone") {
     window.open(`https://wa.me/${text}`, "_blank");
   } else if (type == "email") {

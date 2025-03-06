@@ -5,7 +5,6 @@ import styles from "./Home.module.css";
 import Title from "../../components/common/Title";
 
 
-import backgroundVideoDesktop from "../../Assets/video/Video Abertura Site.mp4"
 import backgroundVideoMobile from "../../Assets/video/Video Abertura Site_phone.mp4"
 
 import Gabriel from "../../Assets/img/Gabriel.jpg"
@@ -15,15 +14,7 @@ import ClientCarousel from "../../components/ClientCarousel/ClientCarousel";
 import WhatsappContact from "../../components/WhatsappContact/WhatsappContact";
 
 const Home = () => {
-    const [backgroundVideo, setBackgroundVideo] = useState<string>(backgroundVideoDesktop);
-
-    useEffect(() => {
-        if (window.innerWidth < 768) {
-            setBackgroundVideo(backgroundVideoMobile);
-        } else {
-            setBackgroundVideo(backgroundVideoDesktop);
-        }
-    }, []);
+    const backgroundVideo = backgroundVideoMobile;
 
     return (
         <div>
