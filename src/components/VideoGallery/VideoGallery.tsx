@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./VideoGallery.module.css";
 import { NavLink } from "react-router-dom";
 import { Video } from "../../services/VideoGalleryService";

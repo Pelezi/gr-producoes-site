@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { NavLink, useNavigate } from "react-router-dom";
 
 import styles from "./Menu.module.css";
 
-import { FaGift, FaBars } from "react-icons/fa6";
-import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaBars } from "react-icons/fa6";
 import Button from "../../common/Button";
 
 import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
