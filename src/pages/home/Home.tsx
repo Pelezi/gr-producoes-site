@@ -28,9 +28,9 @@ const Home = () => {
     return (
         <div>
             <div className={styles.backgroundVideo}>
-                <video autoPlay loop muted playsInline>
+                {/* <video autoPlay loop muted playsInline>
                     <source src="https://gr-producoes.s3.sa-east-1.amazonaws.com/Video+Abertura+Site_phone.mp4" type="video/mp4" />
-                </video>
+                </video> */}
                 <div className={styles.gradientBottom}></div>
             </div>
             <main className={styles.container}>
