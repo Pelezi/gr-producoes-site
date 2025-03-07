@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Loading.module.css";
 
-import logo from "../../assets/img/GrProducoesWhite.png";
+import logo from "../../../Assets/img/GrProducoesWhite.png";
 
 interface LoadingProps {
     isLoading: boolean;

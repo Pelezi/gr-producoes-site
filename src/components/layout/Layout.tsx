@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Menu from "./Menu";
 import Footer from "./Footer";
-import Loading from "./Loading";
+import Loading from "../common/Loading/Loading";
 
 import styles from "./Layout.module.css";
 import { useNavigate } from "react-router-dom";
