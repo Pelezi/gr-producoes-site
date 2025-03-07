@@ -99,9 +99,12 @@
     margin: 0 auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .bottomSection {
         flex-direction: row;
+    }
+    .socialIcons {
+        margin-top: 0;
     }
 }
 
@@ -109,12 +112,6 @@
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
-}
-
-@media (min-width: 640px) {
-    .socialIcons {
-        margin-top: 0;
-    }
 }
 
 .iconLink {
@@ -126,4 +123,8 @@
 
 .iconLink:hover {
     color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+    
 }
