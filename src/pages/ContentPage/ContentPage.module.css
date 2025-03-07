@@ -342,6 +342,7 @@
 @media screen and (max-width: 768px) {
     .videoGallery {
         grid-template-columns: 1fr;
+        margin: 5vh 0;
     }
 
     .dialogueBalloon {
@@ -360,29 +361,6 @@
     .photo {
         height: 90vw;
         width: 90vw;
-    }
-
-    .card {
-        width: 90vw;
-    }
-
-    .cards {
-        padding: 0;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .card:nth-child(2) {
-        order: 1;
-    }
-
-    .card:nth-child(1) {
-        order: 2;
-    }
-
-    .card:nth-child(3) {
-        order: 3;
     }
 
     .backgroundVideo {
@@ -406,9 +384,5 @@
         margin: 1rem 0;
         padding: 0 10vw;
         justify-content: space-between;
-    }
-
-    .container p {
-        margin: 0;
     }
 }

@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section {
+    .section, .section p {
         margin: 0;
     }
     .contactSection {
