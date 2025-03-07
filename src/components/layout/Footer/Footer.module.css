@@ -124,3 +124,10 @@
 .iconLink:hover {
     color: #e5e7eb;
 }
+
+@media screen and (max-width: 768px) {
+    .topSection {
+        justify-content: center;
+    }
+    
+}
