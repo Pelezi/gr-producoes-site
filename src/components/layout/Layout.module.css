@@ -51,6 +51,11 @@
     z-index: 0;
 }
 
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+}
 
 @media (max-width: 768px) {
     .menu {
