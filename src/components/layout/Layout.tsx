@@ -16,28 +16,22 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     const [loading, setLoading] = useState(true);
-    const [debugInfo, setDebugInfo] = useState("Page opened");
     const navigate = useNavigate();
 
     useEffect(() => {
         const handleLoad = () => {
-            setDebugInfo(prev => `${prev}\nPage loaded`);
             setTimeout(() => {
-                setDebugInfo(prev => `${prev}\nSetting loading to false`);
                 setLoading(false);
             }, 1000);
         };
 
         const handleDOMContentLoaded = () => {
-            setDebugInfo(prev => `${prev}\nDOMContentLoaded`);
             setTimeout(() => {
-                setDebugInfo(prev => `${prev}\nSetting loading to false`);
                 setLoading(false);
             }, 1000);
         };
 
         const handleTimeout = () => {
-            setDebugInfo(prev => `${prev}\nFallback: Setting loading to false`);
             setLoading(false);
         };
 
@@ -48,7 +42,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }
 
         window.addEventListener("load", handleLoad);
-        // Fallback in case the load event doesn't fire
         const timeoutId = setTimeout(handleTimeout, 5000);
 
         return () => {
@@ -60,29 +53,23 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-            {loading ? (
-                <>
-                    <Loading isLoading={loading} />
-                    <div className={styles.debug}>{debugInfo}</div>
-                </>
-            ) : (
-                <div className={styles.container}>
-                    <div className={styles.main}>
-                        <div className={styles.content}>
-                            {children}
-                            <Analytics />
-                            <SpeedInsights />
-                        </div>
-                        <div className={styles.menu}>
-                            <div className={styles.gradient}></div>
-                            <Menu />
-                        </div>
-                        <div className={styles.footer}>
-                            <Footer />
-                        </div>
+            <Loading isLoading={loading} />
+            <div className={`${styles.container} ${loading ? styles.hidden : ""}`}>
+                <div className={styles.main}>
+                    <div className={styles.content}>
+                        {children}
+                        <Analytics />
+                        <SpeedInsights />
+                    </div>
+                    <div className={styles.menu}>
+                        <div className={styles.gradient}></div>
+                        <Menu />
+                    </div>
+                    <div className={styles.footer}>
+                        <Footer />
                     </div>
                 </div>
-            )}
+            </div>
         </>
     );
 };
