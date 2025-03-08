@@ -16,11 +16,16 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     const [loading, setLoading] = useState(true);
+    const [debugInfo, setDebugInfo] = useState("");
     const navigate = useNavigate();
 
     useEffect(() => {
         const handleLoad = () => {
-            setTimeout(() => setLoading(false), 1000);
+            setDebugInfo("Page loaded");
+            setTimeout(() => {
+                setDebugInfo("Setting loading to false");
+                setLoading(false);
+            }, 1000);
         };
         window.addEventListener("load", handleLoad);
         return () => window.removeEventListener("load", handleLoad);
@@ -28,23 +33,29 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     return (
         <>
-            <Loading isLoading={loading} />
-            <div className={`${styles.container} ${loading ? styles.hidden : ""}`}>
-                <div className={styles.main}>
-                    <div className={styles.content}>
-                        {children}
-                        <Analytics />
-                        <SpeedInsights />
-                    </div>
-                    <div className={styles.menu}>
-                        <div className={styles.gradient}></div>
-                        <Menu />
-                    </div>
-                    <div className={styles.footer}>
-                        <Footer />
+            {loading ? (
+                <>
+                    <Loading isLoading={loading} />
+                    <div className={styles.debug}>{debugInfo}</div>
+                </>
+            ) : (
+                <div className={styles.container}>
+                    <div className={styles.main}>
+                        <div className={styles.content}>
+                            {children}
+                            <Analytics />
+                            <SpeedInsights />
+                        </div>
+                        <div className={styles.menu}>
+                            <div className={styles.gradient}></div>
+                            <Menu />
+                        </div>
+                        <div className={styles.footer}>
+                            <Footer />
+                        </div>
                     </div>
                 </div>
-            </div>
+            )}
         </>
     );
 };
