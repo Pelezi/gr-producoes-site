@@ -9,7 +9,7 @@ import Button from "../../common/Button";
 
 import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
 
-// import { motion as m } from "motion/react";
+import { motion as m } from "motion/react";
 
 const Menu: React.FC = ({ }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -60,9 +60,40 @@ const Menu: React.FC = ({ }) => {
                     <FaBars className={styles.icon} />
                     <svg width="22" height="22" viewBox="0 0 248 186" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g className={styles.svgIcon}>
-                            <path d="M1.33333 93H246.667" />
-                            <path d="M1.33333 1H246.667" />
-                            <path d="M1.33333 185H246.667" />
+                            <m.path
+                                animate={
+                                    menuOpen == false ? {
+                                        rotate: 0,
+                                    } : {
+                                        rotate: 135,
+                                    }
+                                }
+                                d="M1.33333 93H246.667"
+                            />
+                            <m.path
+                                animate={
+                                    menuOpen == false ? {
+                                        rotate: 0,
+                                        d: "M1.33333 1H246.667",
+                                    } : {
+                                        rotate: 45,
+                                        d: "M60.33333 70H246.367"
+                                    }
+                                }
+                                d="M1.33333 1H246.667"
+                            />
+                            <m.path
+                                animate={
+                                    menuOpen == false ? {
+                                        rotate: 0,
+                                        d: "M1.33333 185H246.667"
+                                    } : {
+                                        rotate: 45,
+                                        d: "M50.33333 120H190.667"
+                                    }
+                                }
+                                d="M1.33333 185H246.667"
+                            />
                         </g>
                     </svg>
 
