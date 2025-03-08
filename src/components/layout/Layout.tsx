@@ -16,20 +16,31 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     const [loading, setLoading] = useState(true);
-    const [debugInfo, setDebugInfo] = useState("");
+    const [debugInfo, setDebugInfo] = useState("Page opened");
     const navigate = useNavigate();
 
     useEffect(() => {
-        setDebugInfo("Page opened");
         const handleLoad = () => {
-            setDebugInfo("Page loaded");
+            setDebugInfo(prev => `${prev}\nPage loaded`);
             setTimeout(() => {
-                setDebugInfo("Setting loading to false");
+                setDebugInfo(prev => `${prev}\nSetting loading to false`);
                 setLoading(false);
             }, 1000);
         };
+
+        const handleTimeout = () => {
+            setDebugInfo(prev => `${prev}\nFallback: Setting loading to false`);
+            setLoading(false);
+        };
+
         window.addEventListener("load", handleLoad);
-        return () => window.removeEventListener("load", handleLoad);
+        // Fallback in case the load event doesn't fire
+        const timeoutId = setTimeout(handleTimeout, 5000);
+
+        return () => {
+            window.removeEventListener("load", handleLoad);
+            clearTimeout(timeoutId);
+        };
     }, []);
 
     return (
