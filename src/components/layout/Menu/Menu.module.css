@@ -151,11 +151,11 @@
     }
 
     .menuOpen {
-        transform: translateX(-60%);
+        transform: translateX(-60%) translateY(90%);
     }
 
     .menuClosed {
-        transform: translateX(-100%);
+        transform: translateX(-180%) translateY(90%);
     }
 
     .overlay {
