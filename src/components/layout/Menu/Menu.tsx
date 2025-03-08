@@ -55,45 +55,22 @@ const Menu: React.FC = ({ }) => {
 
     return (
         <nav className={`${styles.navigation}`}>
-            <div className={styles.hamburguerMenu}>
+            <div className={`${styles.hamburguerMenu} ${menuOpen ? styles.open : styles.closed}`}>
                 <Button transparent onClick={toggleMenu}>
-                    <FaBars className={styles.icon} />
-                    <svg width="22" height="22" viewBox="0 0 248 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="22" height="22" viewBox="-10 0 330 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g className={styles.svgIcon}>
                             <m.path
                                 animate={
-                                    menuOpen == false ? {
-                                        rotate: 0,
+                                    menuOpen ? {
+                                        rotate: 90,
                                     } : {
-                                        rotate: 135,
+                                        rotate: 0,
                                     }
                                 }
-                                d="M1.33333 93H246.667"
+                                d="M40.33333 93H246.667"
                             />
-                            <m.path
-                                animate={
-                                    menuOpen == false ? {
-                                        rotate: 0,
-                                        d: "M1.33333 1H246.667",
-                                    } : {
-                                        rotate: 45,
-                                        d: "M60.33333 70H246.367"
-                                    }
-                                }
-                                d="M1.33333 1H246.667"
-                            />
-                            <m.path
-                                animate={
-                                    menuOpen == false ? {
-                                        rotate: 0,
-                                        d: "M1.33333 185H246.667"
-                                    } : {
-                                        rotate: 45,
-                                        d: "M50.33333 120H190.667"
-                                    }
-                                }
-                                d="M1.33333 185H246.667"
-                            />
+                            <m.path className={`${styles.lineTop} ${styles.line}`} d="M40 0H248.842C268.279 0 288 16.7358 288 45.9198C288 75.1038 273.762 91 248.842 91H144.421" />
+                            <m.path className={`${styles.lineBottom} ${styles.line}`} d="M248 184H39.1579C39.1579 184 0 179.706 0 139.219C0 98.731 39.1579 93 39.1579 93H143.579" />
                         </g>
                     </svg>
 

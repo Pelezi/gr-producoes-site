@@ -9,11 +9,6 @@
     text-align: center;
 }
 
-.svgIcon {
-    stroke-width: 35px;
-    stroke: white;
-}
-
 .navigation .icon {
     height: 1.5em;
     width: 2em;
@@ -71,6 +66,49 @@
     left: 10%;
     margin: 1rem;
     z-index: 10;
+}
+
+.line {
+    transition-duration: .3s;
+}
+
+.svgIcon * {
+    stroke-linecap: round;
+
+}
+
+.svgIcon {
+    stroke-width: 35px;
+    stroke: white;
+    rotate: 0;
+    transition: all 0.3s ease;
+}
+
+.open {
+    rotate: 45deg;
+    transition: all 0.3s ease;
+}
+
+.closed {
+    rotate: 0;
+    transition: all 0.3s ease;
+}
+
+.svgIcon .lineTop {
+    stroke-dasharray: 210 840;
+}
+
+.svgIcon .lineBottom {
+    transform-origin: 50%;
+    stroke-dasharray: 210 840;
+}
+
+.open .svgIcon .lineTop {
+    stroke-dashoffset: -345;
+}
+
+.open .svgIcon .lineBottom {
+    stroke-dashoffset: -345;
 }
 
 .links {
