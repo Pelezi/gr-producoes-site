@@ -20,10 +20,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        setDebugInfo("testing if it updates")
         const handleLoad = () => {
             console.log("Page loaded event fired");
             setDebugInfo(prev => `${prev}\nPage loaded`);
+            setTimeout(() => {
+                setDebugInfo(prev => `${prev}\nSetting loading to false`);
+                setLoading(false);
+            }, 1000);
+        };
+
+        const handleDOMContentLoaded = () => {
+            console.log("DOMContentLoaded event fired");
+            setDebugInfo(prev => `${prev}\nDOMContentLoaded`);
             setTimeout(() => {
                 setDebugInfo(prev => `${prev}\nSetting loading to false`);
                 setLoading(false);
@@ -36,11 +44,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         };
 
         window.addEventListener("load", handleLoad);
+        document.addEventListener("DOMContentLoaded", handleDOMContentLoaded);
         // Fallback in case the load event doesn't fire
         const timeoutId = setTimeout(handleTimeout, 5000);
 
         return () => {
             window.removeEventListener("load", handleLoad);
+            document.removeEventListener("DOMContentLoaded", handleDOMContentLoaded);
             clearTimeout(timeoutId);
         };
     }, []);
