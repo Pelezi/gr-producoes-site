@@ -151,7 +151,7 @@
     }
 
     .menuOpen {
-        transform: translateX(30%);
+        transform: translateX(-60%);
     }
 
     .menuClosed {
@@ -175,10 +175,6 @@
 
     .link {
         width: 100%;
-    }
-
-    .logo {
-        justify-self: anchor-center;
     }
 
     .navigation .link {
