@@ -10,6 +10,7 @@
     "@vercel/speed-insights": "^1.1.0",
     "axios": "^1.4.0",
     "formik": "^2.2.9",
+    "motion": "^12.4.10",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-easy-crop": "^5.2.0",

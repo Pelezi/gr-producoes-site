@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.svgIcon {
+    stroke-width: 35px;
+    stroke: white;
+}
+
 .navigation .icon {
     height: 1.5em;
     width: 2em;
