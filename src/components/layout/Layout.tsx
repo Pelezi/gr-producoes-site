@@ -20,6 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        setDebugInfo("Page opened");
         const handleLoad = () => {
             setDebugInfo("Page loaded");
             setTimeout(() => {
