@@ -12,27 +12,10 @@ const InfoBox: React.FC<VideoGalleryProps> = ({ video }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        const handleCanPlayThrough = () => {
-            videoRef.current?.play();
-        };
-
-        const handlePlay = () => {
-            if (videoRef.current) {
-                videoRef.current.addEventListener('canplaythrough', handleCanPlayThrough);
-                videoRef.current.play();
-            }
-        };
-
         if (videoRef.current) {
             const videoWidth = videoRef.current.offsetWidth;
             divRef.current?.style.setProperty('--video-width', `${videoWidth}px`);
-            videoRef.current.addEventListener('play', handlePlay);
         }
-
-        return () => {
-            videoRef.current?.removeEventListener('canplaythrough', handleCanPlayThrough);
-            videoRef.current?.removeEventListener('play', handlePlay);
-        };
     }, []);
 
     return (
