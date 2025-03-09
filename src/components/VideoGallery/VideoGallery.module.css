@@ -1,25 +1,24 @@
 .videoLandscape {
     width: 100%;
-    --iframe-width: 0px; 
-    height: calc(((var(--iframe-width) * 9) / 16) + 4rem);
+    --video-width: 0px;
+    height: calc(((var(--video-width) * 9) / 16) + 4rem);
 }
 
-.videoLandscape iframe {
+.videoLandscape video {
     width: 100%;
-    height: calc((var(--iframe-width) * 9) / 16);
+    height: calc((var(--video-width) * 9) / 16);
 }
 
 .videoPortrait {
     grid-row: span 2;
-    justify-items: center;
     width: 100%;
-    --iframe-width: 0px; 
-    height: calc(((var(--iframe-width) * 16) / 9) + 4rem);
+    --video-width: 0px;
+    height: calc(((var(--video-width) * 16) / 9) + 4rem);
 }
 
-.videoPortrait iframe {
+.videoPortrait video {
     width: 100%;
-    height: calc((var(--iframe-width) * 16) / 9);
+    height: calc((var(--video-width) * 16) / 9);
 }
 
 .title {
@@ -29,7 +28,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .videoLandscape iframe {
+    .videoLandscape video {
         width: 90%;
         display: flex;
         justify-self: center;
