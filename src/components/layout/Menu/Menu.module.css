@@ -120,7 +120,7 @@
 }
 
 .menuOpen {
-    transform: translateY(100%);
+    transform: translateY(80%);
 }
 
 .menuClosed {

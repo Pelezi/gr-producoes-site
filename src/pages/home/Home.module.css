@@ -24,6 +24,8 @@
     color: white;
     font-family: "DIN 2014 Light";
     font-weight: normal;
+    position: relative;
+    z-index: 1;
 }
 
 .title strong {
