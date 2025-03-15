@@ -129,5 +129,8 @@
     .topSection {
         justify-content: center;
     }
+    .column, .linkList {
+        justify-items: center;
+    }
     
 }
