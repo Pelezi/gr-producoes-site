@@ -47,7 +47,7 @@ const Footer: React.FC = ({ }) => {
                 <span className={styles.copyright}>
                     © {getCurrentYear()} <strong>Gr Produções</strong>
                 </span>
-                {/* <span className={styles.author}>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span> */}
+                <span className={styles.author}>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span>
                 <div className={styles.socialIcons}>
                     <a
                         href="https://facebook.com"
