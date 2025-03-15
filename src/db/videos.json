@@ -86,14 +86,14 @@
     {
         "id": 13,
         "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Video+10.mp4",
-        "title": "VIDEO 10",
+        "title": "LookBook Roda D'água",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 14,
         "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Video+Curto+(19).mp4",
-        "title": "VIDEO 11",
+        "title": "LookBook Real.com",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
