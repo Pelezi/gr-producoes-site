@@ -12,7 +12,7 @@ const ContactForm: React.FC = () => {
     const emailLine = email ? `Meu email é ${email}` : '';
     const messageLine = message ? `${message}` : '';
     const whatsappMessage = `${nameLine}\n${emailLine}\n${messageLine}`;
-    const whatsappUrl = `https://wa.me/558181880305?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/5562992567382?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
   };
 

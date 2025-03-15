@@ -12,7 +12,7 @@ const WhatsappContact: React.FC<WhatsappContactProps> = ({ message }) => {
             <div className={styles.contactSection}>
                 <p>Vamos criar algo único?</p>
                 <a
-                    href={`https://wa.me/558181880305?text=${encodeURIComponent(message)}`}
+                    href={`https://wa.me/5562992567382?text=${encodeURIComponent(message)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.contactInfo}

@@ -38,7 +38,7 @@ const Footer: React.FC = ({ }) => {
                     <h2 className={styles.columnTitle}>Fale comigo</h2>
                     <ul className={styles.linkList}>
                         <li><a href="mailto:grproducoes@gmail.com" className={styles.link}>grproducoes@gmail.com</a></li>
-                        <li><a href="https://wa.me/558181880305" className={styles.link}>+55 81 8188-0305</a></li>
+                        <li><a href="https://wa.me/5562992567382" className={styles.link}>+55 62 9 9256-7382</a></li>
                     </ul>
                 </div>
             </div>
