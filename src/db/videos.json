@@ -1,112 +1,128 @@
 [
     {
         "id": 1,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/Eventos/Sj+Caruaru+2024.mp4",
+        "path": "videos/Eventos",
+        "fileName": "Sj Caruaru 2024.mp4",
         "title": "SJ Caruaru 2024",
         "orientation": "landscape",
         "page": "eventos"
     },
     {
         "id": 2,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/Eventos/Matu%C3%A9.mp4",
+        "path": "videos/Eventos",
+        "fileName": "Matué.mp4",
         "title": "Matué",
         "orientation": "landscape",
         "page": "eventos"
     },
     {
         "id": 3,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/Eventos/Hotel+Maysa+Video+02.mp4",
+        "path": "videos/Eventos",
+        "fileName": "Hotel Maysa Video 02.mp4",
         "title": "Hotel Mayza",
         "orientation": "landscape",
         "page": "eventos"
     },
     {
         "id": 4,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/Eventos/Deive+Leonardo.mp4",
+        "path": "videos/Eventos",
+        "fileName": "Deive Leonardo.mp4",
         "title": "Deive Leonardo",
         "orientation": "landscape",
         "page": "eventos"
     },
     {
         "id": 5,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/Eventos/Anavitoria+Video+Teste+01.mp4",
+        "path": "videos/Eventos",
+        "fileName": "Anavitoria Video Teste 01.mp4",
         "title": "Anavitória",
         "orientation": "landscape",
         "page": "eventos"
     },
     {
         "id": 6,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/Campanha/Campanha+Baylife+(2).mp4",
+        "path": "videos/FashionFilm/Campanha",
+        "fileName": "Campanha Baylife (2).mp4",
         "title": "Campanha Baylife",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 7,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/Campanha/Campanha+Rota+D%C3%A1gua.mp4",
+        "path": "videos/FashionFilm/Campanha",
+        "fileName": "Campanha Rota Dágua.mp4",
         "title": "Campanha Rota D'água",
         "orientation": "landscape",
         "page": "fashionFilm"
     },
     {
         "id": 8,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/Campanha/Luvit.mp4",
+        "path": "videos/FashionFilm/Campanha",
+        "fileName": "Luvit.mp4",
         "title": "Campanha Luvit",
         "orientation": "landscape",
         "page": "fashionFilm"
     },
     {
         "id": 9,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/Campanha/Real.Com+Video+02+(Campanha).mp4",
+        "path": "videos/FashionFilm/Campanha",
+        "fileName": "Real.Com Video 02 (Campanha).mp4",
         "title": "Campanha Real.com",
         "orientation": "landscape",
         "page": "fashionFilm"
     },
     {
         "id": 10,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/Campanha/Video+Badocky+01.mp4",
+        "path": "videos/FashionFilm/Campanha",
+        "fileName": "Video Badocky 01.mp4",
         "title": "Campanha Badocky",
         "orientation": "landscape",
         "page": "fashionFilm"
     },
     {
         "id": 11,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Looks+Viotto.mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Looks Viotto.mp4",
         "title": "LookBook Viotto",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 12,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Shortes+Viotto.mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Shortes Viotto.mp4",
         "title": "Shorts Viotto",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 13,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Video+10.mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Video 10.mp4",
         "title": "LookBook Roda D'água",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 14,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Video+Curto+(19).mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Video Curto (19).mp4",
         "title": "LookBook Real.com",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 15,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Video+Da+Camisas+Viotto.mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Video Da Camisas Viotto.mp4",
         "title": "Camisas Viotto",
         "orientation": "portrait",
         "page": "fashionFilm"
     },
     {
         "id": 16,
-        "url": "https://gr-producoes.s3.sa-east-1.amazonaws.com/videos/FashionFilm/LookBook/Videos+Curtos+(2)+Baylife.mp4",
+        "path": "videos/FashionFilm/LookBook",
+        "fileName": "Videos Curtos (2) Baylife.mp4",
         "title": "Baylife",
         "orientation": "portrait",
         "page": "fashionFilm"
