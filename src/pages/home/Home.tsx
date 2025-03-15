@@ -16,7 +16,7 @@ const Home = () => {
         <div>
             <div className={styles.backgroundVideo}>
                 <video autoPlay loop muted playsInline>
-                    <source src="https://d3h16t6zshwje6.cloudfront.net/Video+Abertura+Site_phone.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.VITE_AMAZON_CLOUDFRONT_URL}/videos/Video Abertura.mp4`} type="video/mp4" />
                 </video>
                 <div className={styles.gradientBottom}></div>
             </div>
