@@ -262,6 +262,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    animation-delay: 1.3s;
 }
 
 .cards h2 {
