@@ -40,8 +40,8 @@ const Home = () => {
                 <div className={styles.cards}>
                     <div className={styles.card}>
                         <h2>Thiago Silva</h2>
-                        <img src={Thiago} alt="Gabriel Rodrigues" className={styles.photo} />
-                        <p className={styles.role}>Editor | Recém casado | Só tira foto com a esposa</p>
+                        <img src={Thiago} alt="Thiago Silva" className={styles.photo} />
+                        <p className={styles.role}>Editor | Detalhista | Mestre da pós-produção</p>
                     </div>
                     <div className={styles.card}>
                         <h2>Gabriel Rodrigues</h2>
@@ -51,7 +51,7 @@ const Home = () => {
                     </div>
                     <div className={styles.card}>
                         <h2>Lucas</h2>
-                        <img src={Lucas} alt="Gabriel Rodrigues" className={styles.photo} />
+                        <img src={Lucas} alt="Lucas" className={styles.photo} />
                         <p className={styles.role}>Técnico | auxiliar de gravação e iluminação</p>
                     </div>
                 </div>
