@@ -1,5 +1,6 @@
 .form {
   width: 100%;
+  justify-items: center;
 }
 .formGroup {
   width: 100%;

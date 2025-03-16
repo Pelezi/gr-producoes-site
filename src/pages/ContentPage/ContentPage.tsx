@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./ContentPage.module.css";
 
@@ -10,19 +10,32 @@ import { Video } from "../../services/VideoGalleryService";
 
 const ContentPage = ({ page }: { page: string }) => {
     const [videos] = useState<Video[]>(videosData);
+    const [videoSrc, setVideoSrc] = useState("");
 
-    const videoSrc = page === "eventos"
-        ? "https://player.vimeo.com/video/1061441072?h=6731a767fe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1"
-        : "https://player.vimeo.com/video/1061469613?h=45bf0722d8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1";
+    useEffect(() => {
+        setVideoSrc(`${import.meta.env.VITE_AMAZON_CLOUDFRONT_URL}/videos/Apresentacoes/${page === "eventos"
+            ? "Eventos.mp4"
+            : "Fashion Film.mp4"
+            }`);
+    }, [page]);
 
-    const whatsappMessage = page === "eventos"
+    let whatsappMessage = page === "eventos"
         ? "Olá, eu vim pelo site e quero mais informações sobre os eventos"
         : "Olá, eu vim pelo site e quero mais informações sobre os Fashion Films";
 
     return (
         <div>
             <div className={styles.backgroundVideo}>
-                <iframe src={videoSrc} allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Background Video"></iframe>
+                {/* <iframe src={videoSrc} allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Background Video"></iframe> */}
+                <video
+                    key={videoSrc}
+                    autoPlay
+                    playsInline
+                    controls
+                    controlsList="nodownload"
+                >
+                    <source src={videoSrc} type="video/mp4" />
+                </video>
             </div>
             <main className={styles.container}>
                 <p className={styles.highlights}>Trabalhos em destaque</p>

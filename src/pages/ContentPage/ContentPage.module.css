@@ -136,29 +136,14 @@
 
 .backgroundVideo {
     position: relative;
-    width: 99vw;
-    height: 78vh;
     justify-self: center;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.backgroundVideo iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-
-
-    @media (min-aspect-ratio: 16/9) {
-        transform: translate(-50%, -50%);
-        height: 46.25vw
-    }
-
-    @media (max-aspect-ratio: 16/9) {
-        transform: translate(-50%, -60%);
-        width: 60vh;
-    }
+.backgroundVideo video {
+    height: 78vh;
 }
 
 .gradientBottom {
@@ -363,8 +348,10 @@
         width: 90vw;
     }
 
-    .backgroundVideo {
-        height: 70vh;
+    .backgroundVideo video {
+        width: 99vw;
+        height: calc(99vw * 1);
+        object-fit: cover;
     }
 
     .text {
@@ -384,5 +371,9 @@
         margin: 1rem 0;
         padding: 0 10vw;
         justify-content: space-between;
+    }
+
+    .downArrow {
+        margin: 0;
     }
 }

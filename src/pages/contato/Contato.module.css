@@ -48,10 +48,10 @@
     position: absolute;
     content: '';
     width: 2px;
-    height: 50%;
+    height: 100%;
     background-color: #BCB4B4;
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
