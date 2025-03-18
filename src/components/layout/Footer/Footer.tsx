@@ -6,7 +6,7 @@ import styles from "./Footer.module.css";
 
 import GRProducoesWhite from "../../../Assets/img/GrProducoesWhite.png"
 
-import { FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = ({ }) => {
     const getCurrentYear = () => new Date().getFullYear();
@@ -50,32 +50,18 @@ const Footer: React.FC = ({ }) => {
                 <span className={styles.author}>Feito por <a href="https://github.com/Pelezi">Pelezi</a></span>
                 <div className={styles.socialIcons}>
                     <a
-                        href="https://facebook.com"
-                        aria-label="Facebook"
+                        href="https://wa.me/5562992567382"
+                        aria-label="Whatsapp"
                         className={styles.iconLink}
                     >
-                        <FaFacebookF size={20} />
+                        <FaWhatsapp size={20} />
                     </a>
                     <a
-                        href="https://twitter.com"
-                        aria-label="Twitter"
-                        className={styles.iconLink}
-                    >
-                        <FaTwitter size={20} />
-                    </a>
-                    <a
-                        href="https://instagram.com"
+                        href="https://www.instagram.com/groficial__/"
                         aria-label="Instagram"
                         className={styles.iconLink}
                     >
                         <FaInstagram size={20} />
-                    </a>
-                    <a
-                        href="https://github.com"
-                        aria-label="GitHub"
-                        className={styles.iconLink}
-                    >
-                        <FaGithub size={20} />
                     </a>
                 </div>
             </div>
