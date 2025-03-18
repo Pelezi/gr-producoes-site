@@ -10,6 +10,9 @@ import Lucas from "../../Assets/img/Lucas.jpg"
 import ClientCarousel from "../../components/ClientCarousel/ClientCarousel";
 import WhatsappContact from "../../components/WhatsappContact/WhatsappContact";
 
+import conexão from "../../Assets/img/Conexão.png"
+import fourk from "../../Assets/img/4k.png"
+
 const Home = () => {
 
     return (
@@ -46,8 +49,7 @@ const Home = () => {
                     <div className={styles.card}>
                         <h2>Gabriel Rodrigues</h2>
                         <img src={Gabriel} alt="Gabriel Rodrigues" className={styles.photo} />
-                        <p className={styles.role}>Filmmaker | Fundador | Comanda a coisa toda
-                        </p>
+                        <p className={styles.role}>Filmmaker | Fundador | Comanda a coisa toda</p>
                     </div>
                     <div className={styles.card}>
                         <h2>Lucas</h2>
@@ -57,6 +59,29 @@ const Home = () => {
                 </div>
                 {/* Client logos carousel */}
                 <ClientCarousel />
+                <div>
+                    <Title className={styles.subTitle}>Mais um pouco</Title>
+                    <div className={styles.section}>
+                        <div className={styles.textSection}>
+                            <img src={conexão} alt="" />
+                            <div className={styles.text}>
+                                <h2>EQUIPE CONECTADA, PROCESSO PERFEITO</h2>
+                                <p>
+                                    Na GR Produções, acreditamos que a conexão da equipe é o segredo para um material impecável. Do roteiro à entrega final, todos os detalhes passam por um processo colaborativo, garantindo que cada projeto seja único, personalizado e feito com excelência. Aqui, tudo é pensado para que o resultado final seja perfeito e supere expectativas.
+                                </p>
+                            </div>
+                        </div>
+                        <div className={styles.textSection}>
+                            <img src={fourk} alt="" />
+                            <div className={styles.text}>
+                                <h2>QUALIDADE 4K: O PADRÃO QUE INSPIRA</h2>
+                                <p>
+                                    Na GR Produções, acreditamos que a conexão da equipe é o segredo para um material impecável. Do roteiro à entrega final, todos os detalhes passam por um processo colaborativo, garantindo que cada projeto seja único, personalizado e feito com excelência. Aqui, tudo é pensado para que o resultado final seja perfeito e supere expectativas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <WhatsappContact message="Olá, eu vim pelo site e gostaria de conhecer melhor o seu trabalho" />
             </main>
         </div>

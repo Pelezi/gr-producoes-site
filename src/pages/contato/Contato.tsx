@@ -18,7 +18,7 @@ const Contato = () => {
                 <div className={styles.wrapper}>
                     <div className={styles.left}>
                         <ContactInfoItem type="phone" icon={<MdLocalPhone />} text="5562992567382" />
-                        <ContactInfoItem type="email" icon={<MdEmail />} text="teste@email.com" />
+                        <ContactInfoItem type="email" icon={<MdEmail />} text="grproducoes.rec@gmail.com" />
                         <ContactInfoItem type="location" icon={<MdPlace />} text="Goiânia, Goiás" />
                     </div>
                     <div className={styles.right}>

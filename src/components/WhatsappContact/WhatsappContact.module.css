@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 768px) {
     .section, .section p {
-        margin: 0;
+        margin: 2rem 0;
     }
     .contactSection {
         flex-direction: column;
