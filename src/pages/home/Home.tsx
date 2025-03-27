@@ -76,7 +76,7 @@ const Home = () => {
                             <div className={styles.text}>
                                 <h2>QUALIDADE 4K: O PADRÃO QUE INSPIRA</h2>
                                 <p>
-                                    Na GR Produções, acreditamos que a conexão da equipe é o segredo para um material impecável. Do roteiro à entrega final, todos os detalhes passam por um processo colaborativo, garantindo que cada projeto seja único, personalizado e feito com excelência. Aqui, tudo é pensado para que o resultado final seja perfeito e supere expectativas.
+                                Trabalhamos com a qualidade mais avançada do mercado: 4K. Cada frame é cuidadosamente produzido para entregar imagens nítidas, vibrantes e cheias de vida. Com tecnologia de ponta e um olhar criativo, transformamos suas ideias em vídeos que impressionam e encantam.
                                 </p>
                             </div>
                         </div>
